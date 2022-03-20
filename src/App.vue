@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main>
+      <v-app-bar
+        color="light-blue accent-4"
+        dense
+        dark
+      >
+        <v-spacer />
+          <v-toolbar-title>{{msg}}</v-toolbar-title>
+        <v-spacer />
+      </v-app-bar>
+      <!-- Adding Search.vue page here -->
+      <Search />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Search from './components/Search.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
+  data() {
+    return {
+      msg: 'Twitter Data Search Engine'
+    }
+  },
   components: {
-    HelloWorld
+    Search
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
