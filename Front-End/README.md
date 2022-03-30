@@ -7,9 +7,9 @@ You will need Node.js version 6.0 or greater installed on your system.
 npm install
 
 ## Compiles and hot-reloads for development
-npm run serve
+npm run serve  -> After this you can access the front-end from http://localhost:8080/
 
 ## Compiles and minifies for production
 npm run build
 
-This will build code for production in dist directory, copy contents of dist directory to new empty directory "TwitterSearch" and you can use this to deploy front-en on tomcat server. Copy TwitterSearch folder into "tomcat/webapps" folder. After this you can access from tomcat server.
+This will build code for production in dist directory, copy contents of dist directory to new empty directory "TwitterSearch" and you can use this to deploy front-end on tomcat server. Copy "TwitterSearch" folder into "tomcat/webapps" folder. After this you can access from tomcat server.
